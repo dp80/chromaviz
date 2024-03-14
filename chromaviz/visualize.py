@@ -90,5 +90,5 @@ def visualize_collection(col: chromadb.api.models.Collection.Collection, port: i
     global data
     data = col.get(include=["documents", "metadatas", "embeddings"])
     webbrowser.open(f"http://127.0.0.1:{str(port)}")
-    app.run(port=port, debug=False)
+    app.run(port=port, debug=True)
     return
